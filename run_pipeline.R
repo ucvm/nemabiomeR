@@ -95,7 +95,7 @@ head(filtered_out)
 # run dada2 core pipeline -------------------------------------------------
 
 # -- Errors
-err_fwd <= learnErrors(fwd_filt, multithread = TRUE)
+err_fwd = learnErrors(fwd_filt, multithread = TRUE)
 err_rev = learnErrors(rev_filt, multithread = TRUE)
 
 plotErrors(err_fwd, nominalQ = TRUE)
