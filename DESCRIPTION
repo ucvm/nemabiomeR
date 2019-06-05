@@ -1,0 +1,25 @@
+Package: nemabiomeR
+Type: Package
+Title: Helper functions to run the dada2 pipeline on nemabiome data
+Version: 0.1.0
+Author: Matthew L. Workentine
+Maintainer: Matthew L. Workentine <matthew.workentine@ucalgary.ca>
+Description: Some convience functions for running an analysis with dada2.
+    Primarily designed for analyzing nemabiome data but can be used for 
+    other dada2 analysis.  Includes a script to run the analysis
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    Biostrings,
+    ShortRead,
+    dada2,
+    stringr,
+    ggplot2,
+    tibble,
+    tidyr,
+    purrr,
+    dplyr,
+    sys,
+    glue,
+    furrr
