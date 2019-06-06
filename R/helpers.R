@@ -30,5 +30,5 @@ rev_comp = function(seq) {
 #' @param x object to get unique sequences from.  See \code{\link[dada2]{getUniques}} for details.
 #' @export
 getN = function(x) {
-  sum(getUniques(x))
+  sum(dada2::getUniques(x))
 }
