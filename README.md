@@ -8,17 +8,13 @@ Helper functions to run the dada2 pipeline on nemabiome data.  This package prov
 
 ## Installation
 
-Bioconductor version 3.9 or greater and the following Bioconductor packages are required to be installed first:
-
-* dada2 >= 1.12.1
-* Biostrings
-* ShortRead
-
-You can then install nemabiomeR from Github with:
+You can install nemabiomeR from Github with:
 
 ``` r
 devtools::install_github("ucvm/nemabiomeR")
 ```
+
+[Cutadapt](https://cutadapt.readthedocs.io/en/stable/guide.html) is required to use `clip_primers` function.  The recommended way to install cutadapt is from [bioconda](https://bioconda.github.io/).  
 
 ## Usage
 
