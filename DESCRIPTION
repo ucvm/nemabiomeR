@@ -10,6 +10,7 @@ Description: Some convience functions for running an analysis with dada2.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+biocViews:
 Imports: 
     Biostrings,
     ShortRead,
