@@ -1,6 +1,7 @@
 # nemabiomeR
 
 <!-- badges: start -->
+[![Travis build status](https://travis-ci.org/ucvm/nemabiomeR.svg?branch=master)](https://travis-ci.org/ucvm/nemabiomeR)
 <!-- badges: end -->
 
 Helper functions to run the dada2 pipeline on nemabiome data.  This package provides some convience functions for running an analysis with dada2.  Primarily designed for analyzing nemabiome data but can be used for other dada2 analysis.  Includes a script to run the analysis

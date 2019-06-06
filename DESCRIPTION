@@ -22,5 +22,6 @@ Imports:
     dplyr,
     sys,
     glue,
-    furrr
+    furrr,
+    magrittr
 RoxygenNote: 6.1.1
