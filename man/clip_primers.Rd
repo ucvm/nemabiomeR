@@ -16,6 +16,8 @@ clip_primers(fwd_files, rev_files, fwd_primer, rev_primer, out_dir,
 
 \item{rev_primer}{reverse primer sequnce as a string}
 
+\item{out_dir}{path to directory to write the clipped files}
+
 \item{cutadapt_bin}{location of the cutadapt binary. If you're not sure, run
 \code{which cutadapt} on the command line to find out}
 

@@ -6,6 +6,9 @@
 \usage{
 getN(x)
 }
+\arguments{
+\item{x}{object to get unique sequences from.  See \code{\link[dada2]{getUniques}} for details.}
+}
 \description{
 Get number of uniques sequences from a dada2 object
 }

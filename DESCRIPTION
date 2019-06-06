@@ -14,7 +14,7 @@ biocViews:
 Imports: 
     Biostrings,
     ShortRead,
-    dada2,
+    dada2 (>= 1.12.1),
     stringr,
     ggplot2,
     tibble,
@@ -24,5 +24,6 @@ Imports:
     sys,
     glue,
     furrr,
-    magrittr
+    magrittr,
+    attempt
 RoxygenNote: 6.1.1

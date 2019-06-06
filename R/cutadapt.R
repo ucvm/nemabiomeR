@@ -6,6 +6,7 @@
 #' @param rev_files list of file names of the reverse reads
 #' @param fwd_primer forward primer sequnce as a string
 #' @param rev_primer reverse primer sequnce as a string
+#' @param out_dir path to directory to write the clipped files
 #' @param cutadapt_bin location of the cutadapt binary. If you're not sure, run
 #'   \code{which cutadapt} on the command line to find out
 #' @param samples character vector of samples names, if not provided the the forward file names will be used
@@ -41,7 +42,7 @@ clip_primers = function(fwd_files, rev_files, fwd_primer, rev_primer,
 
 
   cutadapt_args = list(r1_out = fwd_cut, r2_out = rev_cut, r1_in = fwd_files, r2_in = rev_files) %>%
-    pmap(function(r1_out, r2_out, r1_in, r2_in) {
+    purrr::pmap(function(r1_out, r2_out, r1_in, r2_in) {
       c("-m", min_len, "-q", q,
         "--max-n", max_n,
         "-g", fwd_primer, "-G", rev_primer,

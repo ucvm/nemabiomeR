@@ -27,6 +27,7 @@ rev_comp = function(seq) {
 
 #' Get number of uniques sequences from a dada2 object
 #'
+#' @param x object to get unique sequences from.  See \code{\link[dada2]{getUniques}} for details.
 #' @export
 getN = function(x) {
   sum(getUniques(x))
